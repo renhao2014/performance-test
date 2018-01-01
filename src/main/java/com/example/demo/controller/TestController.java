@@ -11,9 +11,11 @@ public class TestController {
 
     @RequestMapping(value ="")
     @ResponseBody
-    public String test(){
+    public String test() throws InterruptedException {
         AccessStatistics.totalAccessIncerement();
-        return "Server-A04-性能测试";
+        //模拟应用程序
+        Thread.sleep(300);
+        return "Server-A00-性能测试";
     }
 
 }

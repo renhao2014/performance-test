@@ -27,9 +27,9 @@ public class AccessStatistics {
         reentrantLock.unlock();
     }
 
-    public static void setLastStageTotalAccess(Integer lastStageTotalAccess){
+    public static void setLastStageTotalAccess(Integer lastStageTotalAccessParam){
         reentrantLock.lock();
-        lastStageTotalAccess=lastStageTotalAccess;
+        lastStageTotalAccess=lastStageTotalAccessParam;
         reentrantLock.unlock();
     }
 
